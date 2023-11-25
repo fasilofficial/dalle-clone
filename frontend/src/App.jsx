@@ -24,6 +24,10 @@ const App = () => {
           <Route path="/create-post" element={<CreatePost />} />
         </Routes>
       </section>
+      <footer className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-t-[#e6ebf4]">
+        <p className="text-gray-500 text-xs">{new Date().getFullYear()}</p>
+        <Link className="py-2 px-4 bg-black text-white text-xs rounded-md" to='https://github.com/fasilofficial/'>Follow</Link>
+      </footer>
     </BrowserRouter>
   );
 };
